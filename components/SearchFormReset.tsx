@@ -5,12 +5,12 @@ import React from "react";
 
 const SearchFormReset = () => {
   const reset = () => {
-    const form = document.querySelector("form") as HTMLFormElement;
+    const form = document.querySelector(".search-form") as HTMLFormElement;
     if (form) form.reset();
   };
   return (
     <>
-      <button type="reset" onClick={reset}>
+      <button type="button" onClick={reset}>
         <Link href="/" className="search-btn text-white">
           <X className="size-5" />
         </Link>
