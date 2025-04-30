@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { inc } from "sanity";
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -10,6 +11,14 @@ const nextConfig: NextConfig = {
         hostname: "*",
       },
     ],
+  },
+  experimental: {
+    ppr: "incremental",
+  },
+  devIndicators: {
+    buildActivity: true,
+    buildActivityPosition: "bottom-right",
+    appIsrStatus: true,
   },
 };
 
